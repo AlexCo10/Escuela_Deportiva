@@ -1,14 +1,12 @@
-
 package modelo;
 
+public class Alumno extends Persona {
 
-public class Alumno extends Persona{
-    
     private Categoria categoria;
     private PadreResponsable padre;
 
     public Alumno() {
-    }    
+    }
 
     public Alumno(Categoria categoria, PadreResponsable padre) {
         this.categoria = categoria;
@@ -19,7 +17,7 @@ public class Alumno extends Persona{
         super(dni, nombre, apellidos, direccion, telefono, fechaNacimiento, genero);
         this.categoria = categoria;
         this.padre = padre;
-    }       
+    }
 
     public Categoria getCategoria() {
         return categoria;
@@ -36,7 +34,23 @@ public class Alumno extends Persona{
     public void setPadre(PadreResponsable padre) {
         this.padre = padre;
     }
-    
-    
-    
+
+    public String calcularCategoria() {
+        String categoria = "";
+
+        if ((this.calcularEdad() >= 5) && (this.calcularEdad() <= 9)) {
+            categoria = "Infantil";
+        }
+        if ((this.calcularEdad() >= 10) && (this.calcularEdad() <= 14)) {
+            categoria = "juvenil";
+        }
+        if ((this.calcularEdad() >= 15) && (this.calcularEdad() <= 18)) {
+            categoria = "Mayor";
+        }else{
+            categoria="Sin categoria";
+        }
+
+        return categoria;
+    }
+
 }
