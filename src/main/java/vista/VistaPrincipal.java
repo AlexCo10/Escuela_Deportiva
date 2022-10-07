@@ -59,10 +59,10 @@ public class VistaPrincipal extends javax.swing.JFrame {
         lblAseguradora = new javax.swing.JLabel();
         txtAseguradora = new javax.swing.JTextField();
         btnRetirar = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
+        btnBuscar = new javax.swing.JButton();
         lblValorMatricula = new javax.swing.JLabel();
         txtValorMatricula = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        btnActualizar = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jcbTrabajador = new javax.swing.JComboBox<>();
         lblRegistrarTrabajador = new javax.swing.JLabel();
@@ -125,11 +125,11 @@ public class VistaPrincipal extends javax.swing.JFrame {
 
         btnRetirar.setText("Retirar");
 
-        jButton7.setText("Buscar");
+        btnBuscar.setText("Buscar");
 
         lblValorMatricula.setText("Valor Matricula:");
 
-        jButton1.setText("Actualizar");
+        btnActualizar.setText("Actualizar");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -173,9 +173,9 @@ public class VistaPrincipal extends javax.swing.JFrame {
                                         .addComponent(btnMatricular)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(btnRetirar))
-                                    .addComponent(jButton1))
+                                    .addComponent(btnActualizar))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton7)))))
+                                .addComponent(btnBuscar)))))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -227,9 +227,9 @@ public class VistaPrincipal extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnMatricular)
                     .addComponent(btnRetirar)
-                    .addComponent(jButton7))
+                    .addComponent(btnBuscar))
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
+                .addComponent(btnActualizar)
                 .addGap(14, 14, 14))
         );
 
@@ -469,16 +469,16 @@ public class VistaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnLimpiar;
-    private javax.swing.JButton btnMatricular;
-    private javax.swing.JButton btnMostrar;
-    private javax.swing.JButton btnRegistrarAseguradora;
-    private javax.swing.JButton btnRegistrarCampeonato;
-    private javax.swing.JButton btnRegistrarPadre;
-    private javax.swing.JButton btnRegistrarTrabajador;
-    private javax.swing.JButton btnRetirar;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton7;
+    public javax.swing.JButton btnActualizar;
+    public javax.swing.JButton btnBuscar;
+    public javax.swing.JButton btnLimpiar;
+    public javax.swing.JButton btnMatricular;
+    public javax.swing.JButton btnMostrar;
+    public javax.swing.JButton btnRegistrarAseguradora;
+    public javax.swing.JButton btnRegistrarCampeonato;
+    public javax.swing.JButton btnRegistrarPadre;
+    public javax.swing.JButton btnRegistrarTrabajador;
+    public javax.swing.JButton btnRetirar;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -487,9 +487,9 @@ public class VistaPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JComboBox<String> jcbFechaNacimiento;
-    private javax.swing.JComboBox<String> jcbGenero;
-    private javax.swing.JComboBox<String> jcbTrabajador;
+    public javax.swing.JComboBox<String> jcbFechaNacimiento;
+    public javax.swing.JComboBox<String> jcbGenero;
+    public javax.swing.JComboBox<String> jcbTrabajador;
     private javax.swing.JLabel lblAlumnosMatriculados;
     private javax.swing.JLabel lblApellidos;
     private javax.swing.JLabel lblAseguradora;
@@ -506,14 +506,14 @@ public class VistaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel lblRegistrarTrabajador;
     private javax.swing.JLabel lblTelefono;
     private javax.swing.JLabel lblValorMatricula;
-    private javax.swing.JTextField txtApellidos;
-    private javax.swing.JTextArea txtAreaResultado;
-    private javax.swing.JTextField txtAseguradora;
-    private javax.swing.JTextField txtDNI;
-    private javax.swing.JTextField txtDireccion;
-    private javax.swing.JTextField txtNombre;
-    private javax.swing.JTextField txtPadre;
-    private javax.swing.JTextField txtTelefono;
-    private javax.swing.JTextField txtValorMatricula;
+    public javax.swing.JTextField txtApellidos;
+    public javax.swing.JTextArea txtAreaResultado;
+    public javax.swing.JTextField txtAseguradora;
+    public javax.swing.JTextField txtDNI;
+    public javax.swing.JTextField txtDireccion;
+    public javax.swing.JTextField txtNombre;
+    public javax.swing.JTextField txtPadre;
+    public javax.swing.JTextField txtTelefono;
+    public javax.swing.JTextField txtValorMatricula;
     // End of variables declaration//GEN-END:variables
 }
