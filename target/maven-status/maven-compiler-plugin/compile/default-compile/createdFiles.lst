@@ -1,0 +1,15 @@
+modelo\Campeonato.class
+modelo\Categoria.class
+vista\VistaPrincipal.class
+modelo\Trabajador.class
+modelo\Aseguradora.class
+modelo\Alumno.class
+modelo\AuxiliarContable.class
+modelo\Profesor.class
+modelo\Persona.class
+modelo\Administradora.class
+modelo\Ambulancia.class
+vista\VistaPrincipal$1.class
+modelo\PadreResponsable.class
+controlador\Controlador.class
+modelo\Partido.class
