@@ -46,12 +46,12 @@ public class Controlador implements ActionListener {
         aseguradorasList = new ArrayList<Aseguradora>();
         profesoresList = new ArrayList<Profesor>();
         trabajadoresList = new ArrayList<Trabajador>();
-        
+
         actionListener(this);
     }
 
     public void actionListener(ActionListener control) {
-        
+
         vistaP.btnMatricular.addActionListener(control);
         vistaP.btnRetirar.addActionListener(control);
         vistaP.btnLimpiar.addActionListener(control);
@@ -82,19 +82,58 @@ public class Controlador implements ActionListener {
                 a1.setNombre(vistaP.txtNombre.getText());
                 a1.setDireccion(vistaP.txtDireccion.getText());
                 a1.setTelefono(vistaP.txtTelefono.getText());
-                
+
                 alumnosList.add(a1);
             }
 
         } else if (e.getActionCommand().contentEquals("Retirar")) {
-            
+
+            boolean aux = false;
+            for (int i = 0; i < alumnosList.size(); i++) {
+                if (alumnosList.get(i).getDni().equals(vistaP.txtDNI.getText())) {
+                    aux = true;
+                    if (aux = true) {
+                        alumnosList.remove(alumnosList.get(i));
+                    }
+                }
+            }
+
         } else if (e.getActionCommand().contentEquals("Actualizar")) {
-            
+
+            boolean aux = false;
+            for (int i = 0; i < alumnosList.size(); i++) {
+                if (alumnosList.get(i).getDni().equals(vistaP.txtDNI.getText())) {
+                    aux = true;
+                    if (aux == true) {
+
+                        alumnosList.get(i).setNombre(vistaP.txtNombre.getText());
+                        alumnosList.get(i).setApellidos(vistaP.txtApellidos.getText());
+                        alumnosList.get(i).setDireccion(vistaP.txtDireccion.getText());
+                        alumnosList.get(i).setTelefono(vistaP.txtTelefono.getText());
+                        alumnosList.get(i).setFechaNacimiento(Integer.parseInt((String) vistaP.jcbFechaNacimiento.getSelectedItem()));
+                        alumnosList.get(i).setGenero((String) vistaP.jcbGenero.getSelectedItem());
+
+                    }
+                }
+                vistaP.txtAreaResultado.setText("Usuario Actualizado");
+            }
+            if (aux == false) {
+                vistaP.txtAreaResultado.setText("Usuario No existe");
+            }
 
         } else if (e.getActionCommand().contentEquals("Buscar")) {
-            
+
+        } else if (e.getActionCommand().contentEquals("Mostrar")) {
+
+            vistaP.txtAreaResultado.setText("");
+            for (int i = 0; i < alumnosList.size(); i++) {
+                vistaP.txtAreaResultado.setText(vistaP.txtAreaResultado.getText() + "\n" + alumnosList.get(i).toString());
+            }
+        } else if (e.getActionCommand().contentEquals("Limpiar")) {
+            vistaP.txtAreaResultado.setText("");
+
         }
-            
+
     }
 
 }
